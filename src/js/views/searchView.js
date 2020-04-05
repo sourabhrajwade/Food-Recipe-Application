@@ -17,7 +17,7 @@ export const highLightSelected = id => {
     resultArr.forEach(el => {
        el.classList.remove('results__link--active'); 
     })
-    document.querySelector(`a[href="${id}"]`).classList.add(`results__link--active`);
+    document.querySelector(`.results__link(a[href="${id}"])`).classList.add(`results__link--active`);
 };
 // Limit the title words 
 const limitRecipeTitle = (title, limit = 17) => {
